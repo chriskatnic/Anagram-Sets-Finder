@@ -1,0 +1,39 @@
+Christopher Katnic
+chris.katnic@gmail.com
+
+Program description:
+
+The program will open the file words.txt from hardcoded filepath. Then, the program will read in strings from words.txt line by line.
+
+For each string that is read in, it will be compared to the entire array of already existing anagram objects until it either matches with one of them, or reaches the end of the list. These strings will have their individual characters sorted before comparing to the list of anagram objects.
+
+If it matches one of the anagram objects' key, it will be added to that anagram object's list of words, and will break from the loop.
+
+If it reaches the end of the loop, a new anagram object is instantiated with the value of the string, and its sorted letters, and added to the array of anagram objects at the end.
+
+After parsing the entire file, the program then parses through the array of objects once again to find which object in the array has the most words in its list.
+
+The program then prints out the list of words, and finally the execution time.
+
+
+In order to run the program, first edit line 59 of main.m to properly provide the appropriate filepath for the words.txt file. Then, build the program, and run the resulting .exec file.
+
+
+The program finished executing in 2.03949 hours, or 7342.19140 seconds. The largest set was a set of 9 words: Angor, Argon, Goran, Grano, Groan, Nagor, Orang, Organ, and Rogan.
+
+
+
+2015-01-30 17:23:02.231 Assignemnt2ARC[8237:494075] The group of words in the biggest set of anagrams are: 
+2015-01-30 17:23:02.231 Assignemnt2ARC[8237:494075] angor
+2015-01-30 17:23:02.231 Assignemnt2ARC[8237:494075] argon
+2015-01-30 17:23:02.232 Assignemnt2ARC[8237:494075] goran
+2015-01-30 17:23:02.232 Assignemnt2ARC[8237:494075] grano
+2015-01-30 17:23:02.232 Assignemnt2ARC[8237:494075] groan
+2015-01-30 17:23:02.232 Assignemnt2ARC[8237:494075] nagor
+2015-01-30 17:23:02.232 Assignemnt2ARC[8237:494075] orang
+2015-01-30 17:23:02.232 Assignemnt2ARC[8237:494075] organ
+2015-01-30 17:23:02.233 Assignemnt2ARC[8237:494075] rogan
+2015-01-30 17:23:02.233 Assignemnt2ARC[8237:494075] There are 9 words in that group
+2015-01-30 17:23:02.233 Assignemnt2ARC[8237:494075] runtime: -7342.194140
+Program ended with exit code: 0
+
